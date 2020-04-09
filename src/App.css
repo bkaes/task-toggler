@@ -1,38 +1,87 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background: linear-gradient(to top right, green, lightblue);
+  background-repeat: no-repeat;
+  height: fit-content;
   min-height: 100vh;
+
+
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: fit-content;
+  justify-content: center;
+
+}
+
+.task-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 2.5% 5%;
+  flex-basis: 45vw;
+  background: white;
+  border: #282c34 2px solid;
+  border-radius: 10px;
+  list-style-type: none;
+  box-shadow: 3px 2px 5px black;
+  padding: 5% 0%;
+  max-width: 500px;
+  min-width: 400px;
+}
+.task-list-name {
+  flex: 0;
+  font-size: 1.5em;
+  align-self: center;
+  width: 50%;
+  margin: 10px 10px;
+}
+.task-item{
+  display: flex;
+  flex: .5;
+  margin-top: 3px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background: white;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px grey;
+  background: linear-gradient(to top right, lightcoral, salmon, tomato);
+}
+.space {
+  flex: 1;
+}
+.task-name {
+  overflow: hidden;
+  align-self: center;
+}
+.task-description {
+}
+.task-time-button {
+flex-grow: 0;
+flex-basis: 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.timer-display {
+width: max-content;
+flex-grow: 1;
+flex-shrink: 0;
+flex-basis: 4em;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.checkbox {
+  align-self: center;
+}
+.add-task-button {
+  width: 50%;
+  flex: 1;
+  align-self: center;
 }
